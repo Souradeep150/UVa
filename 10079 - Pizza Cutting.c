@@ -1,5 +1,5 @@
 /* Date: 22.08.15
-Problem: Pizza cutting
+Problem: 10079 Pizza cutting
 */
 #include <stdio.h>
  
