@@ -1,4 +1,7 @@
 # All codes that solved by me.
-Do not use this code unless you don't try.
 
+
+Just for building for my logic. 
+
+http://uhunt.felix-halim.net/id/741729
 -ProKawsar
