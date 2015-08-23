@@ -1,4 +1,4 @@
-# All codes that solved by me.
+# All codes are solved by me.
 
 
 Just for building for my logic. 
