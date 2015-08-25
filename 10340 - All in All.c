@@ -1,5 +1,5 @@
 /* Date: 25.08.15
-Problem: All in All
+Problem: 10340 All in All
 */
 
 #include <stdio.h>
@@ -8,7 +8,7 @@ Problem: All in All
 int main(){
 
 	int i, t, j, n=0;
-	char b[10000], a[10000];
+	char b[100000], a[100000];
 
 
 	while(scanf("%s %s", &a, &b) != EOF){
