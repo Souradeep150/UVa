@@ -1,5 +1,5 @@
 /* Date: 18.08.15
-Problem: 11614 - Etruscan Warriors Never Play Chess
+Problem: 11614 -Etruscan Warriors Never Play Chess
 */
 #include<stdio.h>
 
