@@ -1,4 +1,4 @@
-/* Date: 14.08.15
+/* Date: 28.08.15
 Problem : 12541 - Birthdates
 */
 #include <stdio.h>
