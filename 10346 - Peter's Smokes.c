@@ -1,5 +1,5 @@
 /* Language: C
-Problem: Uva  10346 - Peter's Smokes
+Problem: 10346 - Peter's Smokes
 */
 
 #include <stdio.h>
