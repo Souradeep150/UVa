@@ -23,7 +23,7 @@ int main()
             v.push(binary[i]-'0');
         }
         n = v.size();
-        for(i=0; i<n; i++){
+        for(i=0; i<n; i++){  /* for avoiding leading 0 */
 
             if(v.front() == 1) t = 0;
             if(v.front() == 0 && t ){
@@ -32,7 +32,7 @@ int main()
         }
         cout<<"The parity of ";
         n = v.size();
-        for(i=0; i<n; i++){    /* for avoiding leading 0 */
+        for(i=0; i<n; i++){   
             cout << v.front();
             v.pop();
         }
