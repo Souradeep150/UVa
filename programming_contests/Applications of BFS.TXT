@@ -1,0 +1,29 @@
+Applications of BFS
+
+Find the shortest path in unweighted graph.
+Search for connected components in the graph for O (n + m).
+To do this, we just run round in width from each vertex, except for vertices visited the remaining ( \ Rm used = true) after a previous runs.
+Thus, we perform normal start in width from each of the top, but do not reset each time the array \ Rm used [], due to which we are every time we get a new connected component,
+and the total running time will be still O (n + m)(such multiple bypass starts on the graph without zeroing array \ Rm usedcalled a series of rounds in width).
+
+Finding a solution to a problem (the game) with the least number of moves , if each state of the system can be represented by a vertex of the graph, and the transitions from one state to the other - edges of the graph.
+A classic example - a game where the robot moves in the field, at the same time it can move the boxes are on the same field, and the need for a minimum number of moves required to move the boxes into position.
+Solve this detour across the graph, where the state (top) is a set of coordinates: the coordinates of the robot, and the coordinates of all the boxes.
+
+Finding the shortest path in the 0-1-column (ie column suspended, but only with the weights equal to 0 or 1): just a little modified breadth-first search: if the current edge of zero weight,
+and distance is an improvement to some vertex then add this vertex is not the end but the beginning of the queue.
+
+Finding the shortest cycle in a directed unweighted graph: produce a breadth-first search from each vertex; as soon as we try to bypass the process to go from the current peaks on some edge to an already visited vertex, then it means that we have found the shortest cycle, and stop bypassing wide;
+found among all such cycles (one from each startup bypass) choose the shortest.
+
+Find all the edges that lie on any shortest path between a given pair of vertices (A, b).
+To do this, start the search in 2 widths: from a, to and from b. We denote d_a []the array shortest distances obtained from the first bypass and through d_b []- in a second bypass.
+Now, for every edge (U, v)is easy to check whether he is on any fast track: the criterion is the condition d_a [u] + 1 + d_b [v] = d_a [b].
+
+Find all the vertices on any shortest path between a given pair of vertices (A, b).
+To do this, start the search in 2 widths: from a, to and from b. We denote d_a []the array shortest distances obtained from the first bypass and through d_b []- in a second bypass.
+Now, for each vertex vis easy to check whether he is on any fast track: the criterion is the condition d_a [v] + d_b [v] = d_a [b].
+
+Find the shortest way to an even in the graph (ie, the path of even length). 
+For this we must construct an auxiliary graph, whose vertices are the state (V, c), where v- the number of current peaks c = 0 \ ldots 1- the current parity. Any edge (A, b)of the original graph in this new column will turn into two ribs ((U, 0), (v, 1))and ((U, 1), (v, 0)).
+After that, on this graph it is necessary to bypass wide to find the shortest path from the starting vertex to the end, with parity, equal to 0.
